@@ -2,7 +2,10 @@ services:
   - type: web
     name: css-creator
     runtime: php
-    region: oregon
+    buildCommand: ""
+    startCommand: php -S 0.0.0.0:$PORT
     envVars:
-      - key: APP_ENV
-        value: production
+      - key: PHP_VERSION
+        value: 8.2
+    healthCheckPath: /
+    autoDeploy: true
