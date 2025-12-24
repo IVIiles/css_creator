@@ -1,6 +1,11 @@
 {
-  "name": "IVIiles/css-creator",
-  "description": "Interactive CSS generator",
-  "type": "project"
-
+    "name": "css-creator/app",
+    "description": "CSS Creator - Générateur de CSS interactif",
+    "type": "project",
+    "require": {
+        "php": ">=8.1"
+    },
+    "require-dev": {
+        "ext-json": "*"
+    }
 }
